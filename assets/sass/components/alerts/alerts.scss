@@ -1,0 +1,86 @@
+//// Component - Alerts
+//@mixin alert-variant(
+//  $alert-vertical-padding,
+//  $alert-horizontal-padding,
+//  $background,
+//  $border-color,
+//  $text-color
+//) {
+//  background-color: $background;
+//  border: 1px solid $border-color;
+//  color: $text-color;
+//  padding: $alert-vertical-padding $alert-horizontal-padding;
+//}
+//
+//.alert-icon {
+//  float: left;
+//  margin-right: 15px;
+//}
+//
+//.alert-info {
+//  margin: 0;
+//  text-transform: uppercase;
+//  font-weight: normal;
+//  font-size: 14px;
+//}
+//
+//.alert-container {
+//  position: relative;
+//  max-width: 960px;
+//  margin: 0 auto;
+//}
+//
+//.close-icon {
+//  float: right;
+//  color: #000;
+//  margin-top: 0;
+//  margin-left: 0;
+//  width: 21px;
+//  height: 21px;
+//  position: relative;
+//  background: none;
+//  border: none;
+//  outline: none;
+//  cursor: pointer;
+//  text-indent: -999px;
+//  overflow: hidden;
+//  white-space: nowrap;
+//
+//  &:before,
+//  &:after {
+//    content: '';
+//    position: absolute;
+//    top: 8px;
+//    width: 15px;
+//    height: 2px;
+//    left: 0;
+//  }
+//  &:before {
+//    background-color: #fff;
+//    transform: rotate(-45deg);
+//  }
+//  &:after {
+//    background-color: #fff;
+//    transform: rotate(45deg);
+//  }
+//}
+//
+////Example
+//.alert {
+//  @include alert-variant(15px, 20px, $blue-dark, $blue-dark, #fff);
+//  &.alert-custom {
+//    @include alert-variant(null, null, $black-dark, $black-dark, null);
+//  }
+//  &.alert-info {
+//    @include alert-variant(null, null, $blue-dark, $blue-dark, null);
+//  }
+//  &.alert-success {
+//    @include alert-variant(null, null, $green-dark, $green-dark, null);
+//  }
+//  &.alert-warning {
+//    @include alert-variant(null, null, $orange-dark, $orange-dark, null);
+//  }
+//  &.alert-danger {
+//    @include alert-variant(null, null, $red-dark, $red-dark, null);
+//  }
+//}

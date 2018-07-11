@@ -1,0 +1,63 @@
+:root {
+  --grid-width: 20%;
+  --color-primary: #2980b9;
+  --color-secondary: #c0392b;
+  --color-accent: #16a085;
+  --wide: 75%;
+  --narrow: 25%;
+  --font-size: 18px;
+}
+
+//Color-palette
+
+//Black-shades
+$black-dark: #000;
+$black-light: #4a4a4a;
+
+//White-shades
+$white-dark: #ffffff;
+
+//Gray-shades
+$grey-dark: #7f8c8d;
+$grey-light: #ccc;
+
+//Blue-shades
+$blue-dark: #162e54;
+$blue-light: #00aeff;
+
+//Orange-shades
+$orange-dark: #f87d09;
+$orange-light: #f39c12;
+
+//Green-shades
+$green-dark: #16a085;
+$green-light: #2ecc71;
+
+//Red-shades
+$red-dark: #c0392b;
+$red-light: #e74c3c;
+
+//Yellow-shades
+$yellow-dark: #ff0;
+
+//Purple-shades
+$purple-dark: #8e44ad;
+$purple-light: #9b59b6;
+
+//Base Values
+
+//Link
+$base-link-color: var(--color-primary, black);
+$base-link-color-hover: var(--color-secondary, #fff);
+
+// Tooltips
+//Primary-color
+$tooltip-base-text-color: $white-dark;
+$tooltip-base-bg-color: $black-dark;
+$tooltip-base-border-color: $black-dark;
+//Types
+$tooltip-invert-bg-color: $grey-light;
+$tooltip-success-bg-color: $green-light;
+$tooltip-info-bg-color: $blue-light;
+$tooltip-warning-bg-color: $orange-light;
+$tooltip-danger-bg-color: $red-dark;
