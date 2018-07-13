@@ -1,13 +1,3 @@
-:root {
-  --grid-width: 20%;
-  --color-primary: #2980b9;
-  --color-secondary: #c0392b;
-  --color-accent: #16a085;
-  --wide: 75%;
-  --narrow: 25%;
-  --font-size: 18px;
-}
-
 //Color-palette
 
 //Black-shades
@@ -24,6 +14,8 @@ $grey-light: #ccc;
 //Blue-shades
 $blue-dark: #162e54;
 $blue-light: #00aeff;
+$blue-medium: #5867dd;
+$blue-medium-opacity-05: rgba(88, 103, 221, 0.5);
 
 //Orange-shades
 $orange-dark: #f87d09;
@@ -47,8 +39,8 @@ $purple-light: #9b59b6;
 //Base Values
 
 //Link
-$base-link-color: var(--color-primary, black);
-$base-link-color-hover: var(--color-secondary, #fff);
+$base-link-color: $blue-medium;
+$base-link-color-hover: $blue-medium-opacity-05;
 
 // Tooltips
 //Primary-color

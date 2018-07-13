@@ -44,7 +44,6 @@
   }
 }
 
-//Example
 .button {
   display: inline-block;
   margin-bottom: 0;
@@ -60,33 +59,88 @@
   -ms-user-select: none;
   user-select: none;
   background-image: none;
-  border: 2px solid;
+  border: 1px solid;
   letter-spacing: 0;
   outline: none;
-  @include button-size(12px, 20px, 14px, 1.2, 4px);
-  @include button-variant($white-dark, $black-dark, $black-dark);
+  @include button-size(10px, 20px, 14px, 1.2, 4px);
+  @include button-variant($white-dark, $blue-medium, $blue-medium);
 
   &.button-secondary {
-    @include button-variant($white-dark, $purple-light, $purple-light);
+    @include button-variant($black-light, $white-dark, $grey-light);
     &.button-border {
       &:hover,
       &:focus {
-        background: $purple-light;
-        border-color: $purple-light;
-        color: $white-dark;
+        background: rgba($grey-light, 10%);
+        border-color: rgba($grey-light, 10%);
+        color: $black-light;
       }
     }
   }
 
   &.button-info {
-    @include button-variant($white-dark, $blue-dark, $blue-dark);
+    @include button-variant($white-dark, $blue-light, $blue-light);
     &.button-border {
       &:hover,
       &:focus {
-        background: $blue-dark;
-        border-color: $blue-dark;
+        background: $blue-light;
+        border-color: $blue-light;
         color: $white-dark;
       }
+    }
+  }
+
+  &.button-gradient-primary {
+    background: linear-gradient(135deg, #5867dd 30%, #36a3f7 100%);
+    border: 0 !important;
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(135deg, #3f50d8 30%, #1996f6 100%);
+      color: $white-dark;
+    }
+  }
+
+  &.button-gradient-info {
+    background: linear-gradient(135deg, #36a3f7 30%, #00c5dc 100%);
+    border: 0 !important;
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(135deg, #1996f6 30%, #00aabd 100%);
+      color: $white-dark;
+    }
+  }
+
+  &.button-gradient-success {
+    background: linear-gradient(135deg, #34bfa3 30%, #00c5dc 100%);
+    border: 0 !important;
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(135deg, #2da78e 30%, #00aabd 100%);
+      color: $white-dark;
+    }
+  }
+
+  &.button-gradient-warning {
+    background: linear-gradient(135deg, #ffb822 30%, #f4516c 100%);
+    border: 0 !important;
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(135deg, #ffae03 30%, #f23454 100%);
+      color: $white-dark;
+    }
+  }
+
+  &.button-gradient-danger {
+    background: linear-gradient(135deg, #f4516c 30%, #ffb822 100%);
+    border: 0 !important;
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(135deg, #f23454 30%, #ffae03 100%);
+      color: $white-dark;
     }
   }
 
@@ -126,6 +180,16 @@
     }
   }
 
+  &.button-link {
+    @include button-size(12px, 20px, 14px, 1.2, 0);
+    @include button-variant($base-link-color, transparent, transparent);
+
+    &:hover,
+    &:focus {
+      color: $base-link-color-hover;
+    }
+  }
+
   &.button-round {
     border-radius: 30px;
   }
@@ -144,11 +208,11 @@
   &.button-border {
     background: none;
     color: $black-dark;
-    border-width: 2px;
+    border-width: 1px;
     &:hover,
     &:focus {
-      background: $black-dark;
-      border-color: $black-dark;
+      background: $blue-medium;
+      border-color: $blue-medium;
       color: $white-dark;
     }
   }
@@ -158,10 +222,80 @@
     color: #fff;
     border: #d4d4d4;
     cursor: not-allowed;
+
     &:hover,
     &:focus {
       background: #d4d4d4 !important;
-      color: #fff;
+      color: #fff !important;
     }
   }
+
+  &.button-shadow {
+
+    &-primary {
+      box-shadow: 0 5px 10px 2px rgba(88, 103, 221, .19) !important
+    }
+
+    &-secondary {
+      box-shadow: 0 3px 20px 0 rgba(113, 106, 202, .17) !important;
+    }
+
+    &-info {
+      box-shadow: 0 5px 10px 2px rgba(88, 103, 221, .19) !important;
+    }
+
+    &-success {
+      box-shadow: 0 5px 10px 2px rgba(52, 191, 163, .19) !important;
+    }
+
+    &-warning {
+      box-shadow: 0 5px 10px 2px rgba(255, 116, 8, 0.19) !important;
+    }
+
+    &-danger {
+      box-shadow: 0 5px 10px 2px rgba(244, 81, 108, .19) !important;
+    }
+
+  }
+
+  &.button-air {
+    &:hover,
+    &:focus {
+      transform: translateY(-3px);
+    }
+  }
+}
+
+//Utilities
+
+.background-info {
+  background: $purple-light;
+  color: $white-dark;
+}
+
+.background-success {
+  background: $green-light;
+  color: $white-dark;
+}
+
+.background-warning {
+  background: $orange-light;
+  color: $white-dark;
+}
+
+.background-danger {
+  background: $red-light;
+  color: $white-dark;
+}
+
+.border-round {
+  border-radius: 30px;
+}
+
+.border-flat {
+  border-radius: 0;
+}
+
+.border-circle {
+  border-radius: 50%;
 }

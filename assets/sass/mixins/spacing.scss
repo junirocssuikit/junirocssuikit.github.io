@@ -17,20 +17,16 @@ $spacers: map-merge((
     .#{$abbrev}-#{$size} {
       #{$prop}: $length !important;
     }
-    .#{$abbrev}t-#{$size},
-    .#{$abbrev}y-#{$size} {
+    .#{$abbrev}t-#{$size} {
       #{$prop}-top: $length !important;
     }
-    .#{$abbrev}r-#{$size},
-    .#{$abbrev}x-#{$size} {
+    .#{$abbrev}r-#{$size} {
       #{$prop}-right: $length !important;
     }
-    .#{$abbrev}b-#{$size},
-    .#{$abbrev}y-#{$size} {
+    .#{$abbrev}b-#{$size} {
       #{$prop}-bottom: $length !important;
     }
-    .#{$abbrev}l-#{$size},
-    .#{$abbrev}x-#{$size} {
+    .#{$abbrev}l-#{$size} {
       #{$prop}-left: $length !important;
     }
   }

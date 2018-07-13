@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta class="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Grid | Juniro CSS KIT</title>
+    <link rel='stylesheet' href='../dist/css/website-style.min.css'/>
+    <link rel='stylesheet' href='../dist/css/layouts.min.css'/>
+    <link rel='stylesheet' href='../dist/css/fonts.min.css'/>
+</head>
+<body>
+<!-- Hero(extended) navbar -->
+<div class="navbar navbar--extended">
+    <nav class="nav__mobile"></nav>
+    <div class="container">
+        <div class="navbar__inner">
+            <a href="/" class="navbar__logo">Juniro CSS Kit</a>
+            <nav class="navbar__menu">
+                <ul>
+                    <li>
+                        <a href="../page.html">HTML UI KITS</a>
+                    </li>
+                    <li>
+                        <a class="active" href="../components.html">Components</a>
+                    </li>
+                    <li>
+                        <a href="../page.html">Documentation</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="navbar__menu-mob">
+                <a href="" id='toggle'>
+                    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                              class=""></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero unit -->
+<div class="page__header secondary">
+    <div class="hero__overlay hero__overlay--gradient"></div>
+    <div class="hero__mask"></div>
+    <div class="page__header__inner">
+        <div class="container">
+            <div class="page__header__content">
+                <div class="page__header__content__inner" id='navConverter'>
+                    <h1 class="page__header__title">Components | Grid</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page content -->
+<div class="page">
+    <div class="page__inner">
+        <div class="page__menu">
+            <ul class="vMenu">
+                <li>
+                    <a href="#flex-grid" class="vMenu--active">Grid</a>
+                    <ul class="secondary-vMenu">
+                        <li><a href="#flex-responsive">Responsive</a></li>
+                        <li><a href="#flex-fluid">Fluid</a></li>
+                        <li><a href="#flex-offsets">Offsets</a></li>
+                        <li><a href="#flex-auto-width">Auto Width</a></li>
+                        <li><a href="#flex-nested-grids">Nested Grids</a></li>
+                        <li><a href="#flex-alignment">Alignment</a></li>
+                        <li><a href="#flex-distribution">Distribution</a></li>
+                        <li><a href="#flex-reordering">Reordering</a></li>
+                        <li><a href="#flex-reversing">Reversing</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="page__main">
+            <div class="page__subheader">
+                <div class="page__subheader-content">
+                    <h3 id="flex-frid" class="page__subheader-title separator">Grid</h3>
+                    <ul class="page__subheader-breadcrumbs">
+                        <li class="page__subheader-nav__item-home">
+                            <a href="../components.html" class="page__subheader-nav__link">
+                                <i class="page__subheader-nav__link-icon la la-home"></i>
+                            </a>
+                        </li>
+                        <!--<li class="page__subheader-nav__separator">-</li>-->
+                        <!--<li class="page__subheader-nav__item">-->
+                            <!--<a href="" class="page__subheader-nav__link">-->
+                                <!--<span class="page__subheader-nav__link-text">Layout</span>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--<li class="page__subheader-nav__separator">-</li>-->
+                        <!--<li class="page__subheader-nav__item">-->
+                            <!--<a href="" class="page__subheader-nav__link">-->
+                                <!--<span class="page__subheader-nav__link-text">Grid</span>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="page__content">
+                <div class="row">
+                    <div class="col-xsmall-12">
+                        <!--Begin-panel-->
+                        <div class="panel">
+                            <div class="panel__head">
+                                <div class="panel__head-caption">
+                                    <div class="panel__head-title">
+                                        <h3 class="panel__head-text">
+                                            Flexbox Grid Responsive
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel__body">
+                                <!--Responsive-->
+                                <div class="panel__body-content">
+                                    <h4 id="flex-responsive" class="panel__body-text">
+                                        Responsive
+                                    </h4>
+                                    <p>Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at xs, sm, md & lg viewport widths.</p>
+                                    <div class="demo-preview">
+                                        <div class="row">
+                                            <div class="col-xsmall-12 col-small-3 col-medium-2 col-large-1">
+                                                <div class="box-row"></div>
+                                            </div>
+                                            <div class="col-xsmall-6 col-small-6 col-medium-8 col-large-10">
+                                                <div class="box-row"></div>
+                                            </div>
+                                            <div class="col-xsmall-6 col-small-3 col-medium-2 col-large-1">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-12 col-small-3 col-medium-2 col-large-1">
+                                                <div class="box-row"></div>
+                                            </div>
+                                            <div class="col-xsmall-12 col-small-9 col-medium-10 col-large-11">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-10 col-small-6 col-medium-8 col-large-10">
+                                                <div class="box-row"></div>
+                                            </div>
+                                            <div class="col-xsmall-2 col-small-6 col-medium-4 col-large-2">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Fluid-->
+                                <div class="panel__body-content">
+                                    <h4 id="flex-fluid" class="panel__body-text">
+                                        Fluid
+                                    </h4>
+                                    <p>Percent based widths allow fluid resizing of columns and rows.</p>
+                                    <div class="demo-preview">
+                                        <div class="row">
+                                            <div class="col-xsmall-12">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-1">
+                                                <div class="box-row"></div>
+                                            </div>
+                                            <div class="col-xsmall-11">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-2">
+                                                <div class="box-row"></div>
+                                            </div>
+                                            <div class="col-xsmall-10">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-3">
+                                                <div class="box-row"></div>
+                                            </div>
+                                            <div class="col-xsmall-9">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-4">
+                                                <div class="box-row"></div>
+                                            </div>
+                                            <div class="col-xsmall-8">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-5">
+                                                <div class="box-row"></div>
+                                            </div>
+                                            <div class="col-xsmall-7">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-6">
+                                                <div class="box-row"></div>
+                                            </div>
+                                            <div class="col-xsmall-6">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Offsets-->
+                                <div class="panel__body-content">
+                                    <h4 id="flex-offsets" class="panel__body-text">
+                                        Offsets
+                                    </h4>
+                                    <p>Offset a column</p>
+                                    <div class="demo-preview">
+                                        <div class="row">
+                                            <div class="col-xsmall-offset-11 col-xsmall-1">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-offset-10 col-xsmall-2">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-offset-9 col-xsmall-3">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-offset-8 col-xsmall-4">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-offset-7 col-xsmall-5">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-offset-6 col-xsmall-6">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-offset-5 col-xsmall-7">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-offset-4 col-xsmall-8">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-offset-3 col-xsmall-9">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-offset-2 col-xsmall-10">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall-offset-1 col-xsmall-11">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Auto Width-->
+                                <div class="panel__body-content">
+                                    <h4 id="flex-auto-width" class="panel__body-text">
+                                        Auto Width
+                                    </h4>
+                                    <p>Add any number of auto sizing columns to a row. Let the grid figure it out.</p>
+                                    <div class="demo-preview">
+                                        <div class="row">
+                                            <div class="col-xsmall">
+                                                <div class="box-row"></div>
+                                            </div>
+                                            <div class="col-xsmall">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xsmall">
+                                                <div class="box-row"></div>
+                                            </div>
+                                            <div class="col-xsmall">
+                                                <div class="box-row"></div>
+                                            </div>
+                                            <div class="col-xsmall">
+                                                <div class="box-row"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Nested Grids-->
+                                <div class="panel__body-content">
+                                    <h4 id="flex-nested-grids" class="panel__body-text">
+                                        Nested Grids
+                                    </h4>
+                                    <p>Nest grids inside grids inside grids.</p>
+                                    <div class="demo-preview">
+                                        <div class="row">
+                                            <div class="col-xsmall-7">
+                                                <div class="box box-container">
+                                                    <div class="row">
+                                                        <div class="col-xsmall-9">
+                                                            <div class="box-first box-container">
+                                                                <div class="row">
+                                                                    <div class="col-xsmall-4">
+                                                                        <div class="box-nested"></div>
+                                                                    </div>
+                                                                    <div class="col-xsmall-8">
+                                                                        <div class="box-nested"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xsmall-3">
+                                                            <div class="box-first box-container">
+                                                                <div class="row">
+                                                                    <div class="col-xsmall">
+                                                                        <div class="box-nested"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xsmall-5">
+                                                <div class="box box-container">
+                                                    <div class="row">
+                                                        <div class="col-xsmall-12">
+                                                            <div class="box-first box-container">
+                                                                <div class="row">
+                                                                    <div class="col-xsmall-6">
+                                                                        <div class="box-nested"></div>
+                                                                    </div>
+                                                                    <div class="col-xsmall-6">
+                                                                        <div class="box-nested"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Alignment-->
+                                <div class="panel__body-content">
+                                    <h4 id="flex-alignment" class="panel__body-text">
+                                        Alignment
+                                    </h4>
+                                    <p>Add classes to align elements to the start or end of a row as well as the top, bottom, or center of a column.</p>
+                                    <div class="demo-preview">
+                                        <div class="demo-list">
+                                            <h3><code class="demo-secondary-text">.start-</code></h3>
+                                            <div class="row">
+                                                <div class="col-xsmall-12">
+                                                    <div class="box box-container">
+                                                        <div class="row start-xsmall">
+                                                            <div class="col-xsmall-6">
+                                                                <div class="box-nested"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="demo-list">
+                                            <h3><code class="demo-secondary-text">.center-</code></h3>
+                                            <div class="row">
+                                                <div class="col-xsmall-12">
+                                                    <div class="box box-container">
+                                                        <div class="row center-xsmall">
+                                                            <div class="col-xsmall-6">
+                                                                <div class="box-nested"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="demo-list">
+                                            <h3><code class="demo-secondary-text">.end-</code></h3>
+                                            <div class="row">
+                                                <div class="col-xsmall-12">
+                                                    <div class="box box-container">
+                                                        <div class="row end-xsmall">
+                                                            <div class="col-xsmall-6">
+                                                                <div class="box-nested"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="demo-list">
+                                            <h3><code class="demo-secondary-text">.top-</code></h3>
+                                            <div class="row top-xsmall">
+                                                <div class="col-xsmall-6">
+                                                    <div class="box-large"></div>
+                                                </div>
+                                                <div class="col-xsmall-6">
+                                                    <div class="box"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="demo-list">
+                                            <h3><code class="demo-secondary-text">.middle-</code></h3>
+                                            <div class="row middle-xsmall">
+                                                <div class="col-xsmall-6">
+                                                    <div class="box-large"></div>
+                                                </div>
+                                                <div class="col-xsmall-6">
+                                                    <div class="box"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="demo-list">
+                                            <h3><code class="demo-secondary-text">.bottom-</code></h3>
+                                            <div class="row bottom-xsmall">
+                                                <div class="col-xsmall-6">
+                                                    <div class="box-large"></div>
+                                                </div>
+                                                <div class="col-xsmall-6">
+                                                    <div class="box"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Distribution-->
+                                <div class="panel__body-content">
+                                    <h4 id="flex-distribution" class="panel__body-text">
+                                        Distribution
+                                    </h4>
+                                    <p>Add classes to distribute the contents of a row or column.</p>
+                                    <div class="demo-preview">
+                                        <div class="demo-list">
+                                            <h3><code class="demo-secondary-text">.around-</code></h3>
+                                            <div class="row">
+                                                <div class="col-xsmall-12">
+                                                    <div class="box box-container">
+                                                        <div class="row around-xsmall">
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-nested"></div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-nested"></div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-nested"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="demo-list">
+                                            <h3><code class="demo-secondary-text">.between-</code></h3>
+                                            <div class="row">
+                                                <div class="col-xsmall-12">
+                                                    <div class="box box-container">
+                                                        <div class="row between-xsmall">
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-nested"></div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-nested"></div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-nested"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Reordering-->
+                                <div class="panel__body-content">
+                                    <h4 id="flex-reordering" class="panel__body-text">
+                                        Reordering
+                                    </h4>
+                                    <p>Add classes to reorder columns.</p>
+                                    <div class="demo-preview">
+                                        <div class="demo-list">
+                                            <h3><code class="demo-secondary-text">.first-</code></h3>
+                                            <div class="row">
+                                                <div class="col-xsmall-12">
+                                                    <div class="box box-container">
+                                                        <div class="row">
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-first">1</div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-first">2</div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-first">3</div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-first">4</div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-first">5</div>
+                                                            </div>
+                                                            <div class="col-xsmall-2 first-xsmall">
+                                                                <div class="box-nested">6</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="demo-list">
+                                            <h3><code class="demo-secondary-text">.last-</code></h3>
+                                            <div class="row">
+                                                <div class="col-xsmall-12">
+                                                    <div class="box box-container">
+                                                        <div class="row">
+                                                            <div class="col-xsmall-2 last-xsmall">
+                                                                <div class="box-nested">1</div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-first">2</div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-first">3</div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-first">4</div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-first">5</div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-first">6</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Reversing-->
+                                <div class="panel__body-content">
+                                    <h4 id="flex-reversing" class="panel__body-text">
+                                        Reversing
+                                    </h4>
+                                    <p>Add classes to reverse the columns.</p>
+                                    <div class="demo-preview">
+                                        <div class="demo-list">
+                                            <h3><code class="demo-secondary-text">.reverse</code></h3>
+                                            <div class="row">
+                                                <div class="col-xsmall-12">
+                                                    <div class="box box-container">
+                                                        <div class="row reverse">
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-nested">1</div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-nested">2</div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-nested">3</div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-nested">4</div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-nested">5</div>
+                                                            </div>
+                                                            <div class="col-xsmall-2">
+                                                                <div class="box-nested">6</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End-panel-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src='../dist/js/app.js'></script>
+</body>
+</html>

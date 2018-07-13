@@ -4,22 +4,36 @@ var elixir = require('laravel-elixir');
 
 elixir(function (mix) {
     mix
-        .sass(
-            './assets/sass/app.scss', './dist/css/app.min.css'
-        )
+    // App
+        .sass('./assets/sass/app.scss', './dist/css/app.min.css')
 
-        .sass(
-            './assets/sass/pages/website/website-style.scss', './dist/css/website-style.min.css'
-        )
+        // Website
+        .sass('./assets/sass/pages/website/website-style.scss', './dist/css/website-style.min.css')
 
-        .sass(
-            [
-                './assets/sass/helpers/base-helpers.scss',
-                './assets/sass/components/base-components.scss'
-            ], './dist/css/components.min.css')
+        // Components
+        .sass('./assets/sass/components/base-components.scss', './dist/css/components.min.css')
 
+        // Layouts
+        .sass('./assets/sass/layouts/base-layouts.scss', './dist/css/layouts.min.css')
+
+        // Mixins
+        .sass('./assets/sass/mixins/base-mixins.scss', './dist/css/mixins.min.css')
+
+        //Fonts
         .styles(
-            ['./assets/sass/vendor-css/normalize/normalize.css'],
+            [
+                './dist/fonts/flaticon/css/flaticon.css',
+                './dist/fonts/line-awesome/css/line-awesome.css',
+                './dist/fonts/line-awesome/css/line-awesome-font-awesome.css'
+            ],
+            './dist/css/fonts.min.css'
+        )
+
+        //Vendor-CSS
+        .styles(
+            [
+                './assets/sass/vendor-css/normalize/normalize.css'
+            ],
             './dist/css/vendor.min.css'
         );
 

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta class="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Buttons | Juniro CSS KIT</title>
+    <link rel='stylesheet' href='../dist/css/website-style.min.css'/>
+    <link rel='stylesheet' href='../dist/css/components.min.css'/>
+    <link rel='stylesheet' href='../dist/css/layouts.min.css'/>
+    <link rel='stylesheet' href='../dist/css/fonts.min.css'/>
+</head>
+<body>
+<!-- Hero(extended) navbar -->
+<div class="navbar navbar--extended">
+    <nav class="nav__mobile"></nav>
+    <div class="container">
+        <div class="navbar__inner">
+            <a href="/" class="navbar__logo">Juniro CSS Kit</a>
+            <nav class="navbar__menu">
+                <ul>
+                    <li>
+                        <a href="../page.html">HTML UI KITS</a>
+                    </li>
+                    <li>
+                        <a class="active" href="../components.html">Components</a>
+                    </li>
+                    <li>
+                        <a href="../page.html">Documentation</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="navbar__menu-mob">
+                <a href="" id='toggle'>
+                    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                              class=""></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero unit -->
+<div class="page__header secondary">
+    <div class="hero__overlay hero__overlay--gradient"></div>
+    <div class="hero__mask"></div>
+    <div class="page__header__inner">
+        <div class="container">
+            <div class="page__header__content">
+                <div class="page__header__content__inner" id='navConverter'>
+                    <h1 class="page__header__title">Components | Buttons</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page content -->
+<div class="page">
+    <div class="page__inner">
+        <div class="page__menu">
+            <ul class="vMenu">
+                <li>
+                    <a href="#default-buttons" class="vMenu--active">Default Buttons</a>
+                    <ul class="secondary-vMenu">
+                        <li><a href="#button-state">State Buttons</a></li>
+                        <li><a href="#button-gradient">Gradient Buttons</a></li>
+                        <li><a href="#button-shadow">Shadow Buttons</a></li>
+                        <li><a href="#button-air">Air Buttons</a></li>
+                        <li><a href="#button-pill">Pill Buttons</a></li>
+                        <li><a href="#button-outline">Outline Buttons</a></li>
+                        <li><a href="#button-flat">Sharp/Flat Buttons</a></li>
+                        <li><a href="#button-disabled">Disabled Buttons</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="page__main">
+            <div class="page__subheader">
+                <div class="page__subheader-content">
+                    <h3 id="flex-frid" class="page__subheader-title separator">Buttons</h3>
+                    <ul class="page__subheader-breadcrumbs">
+                        <li class="page__subheader-nav__item-home">
+                            <a href="../components.html" class="page__subheader-nav__link">
+                                <i class="page__subheader-nav__link-icon la la-home"></i>
+                            </a>
+                        </li>
+                        <!--<li class="page__subheader-nav__separator">-</li>-->
+                        <!--<li class="page__subheader-nav__item">-->
+                        <!--<a href="" class="page__subheader-nav__link">-->
+                        <!--<span class="page__subheader-nav__link-text">Layout</span>-->
+                        <!--</a>-->
+                        <!--</li>-->
+                        <!--<li class="page__subheader-nav__separator">-</li>-->
+                        <!--<li class="page__subheader-nav__item">-->
+                        <!--<a href="" class="page__subheader-nav__link">-->
+                        <!--<span class="page__subheader-nav__link-text">Grid</span>-->
+                        <!--</a>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="page__content">
+                <div class="row">
+                    <div class="col-xsmall-12">
+                        <!--Begin-panel-->
+                        <div class="panel">
+                            <div class="panel__head">
+                                <div class="panel__head-caption">
+                                    <div class="panel__head-title">
+                                        <h3 class="panel__head-text">
+                                            Default Buttons
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel__body">
+                                <!--State-Buttons-->
+                                <div class="panel__body-content">
+                                    <h4 id="button-state" class="panel__body-text">
+                                        State Buttons
+                                    </h4>
+                                    <p>The <code>.button</code> classes are designed to be used with <code>button</code>, <code>a</code> and <code>input</code> elements.</p>
+                                    <div class="demo-preview">
+                                        <div class="demo-button-group">
+                                            <button type="button" class="button button-primary">Primary</button>
+                                            <button type="button" class="button button-secondary">Secondary</button>
+                                            <button type="button" class="button button-info">Info</button>
+                                            <button type="button" class="button button-success">Success</button>
+                                            <button type="button" class="button button-warning">Warning</button>
+                                            <button type="button" class="button button-danger">Danger</button>
+                                            <button type="button" class="button button-link">Link</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Gradient Buttons-->
+                                <div class="panel__body-content">
+                                    <h4 id="button-gradient" class="panel__body-text">
+                                        Gradient Buttons
+                                    </h4>
+                                    <p>Use <code>button-gradient-*</code> class for pill styles</p>
+                                    <div class="demo-preview">
+                                        <div class="demo-button-group">
+                                            <button type="button" class="button button-gradient-primary">Primary</button>
+                                            <button type="button" class="button button-gradient-success">Success</button>
+                                            <button type="button" class="button button-gradient-info">Info</button>
+                                            <button type="button" class="button button-gradient-warning">Warning</button>
+                                            <button type="button" class="button button-gradient-danger">Danger</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Shadow Buttons-->
+                                <div class="panel__body-content">
+                                    <h4 id="button-shadow" class="panel__body-text">
+                                        Shadow Buttons
+                                    </h4>
+                                    <p>Use <code>button-shadow-*</code> class for outline styles</p>
+                                    <div class="demo-preview">
+                                       <div class="demo-button-group">
+                                           <button type="button" class="button button-primary button-round button-shadow-primary">Primary</button>
+                                           <button type="button" class="button button-secondary button-round button-shadow-secondary">Secondary</button>
+                                           <button type="button" class="button button-info button-round button-shadow-info">Info</button>
+                                           <button type="button" class="button button-success button-round button-shadow-success">Success</button>
+                                           <button type="button" class="button button-warning button-round button-shadow-warning">Warning</button>
+                                           <button type="button" class="button button-danger button-round button-shadow-danger">Danger</button>
+                                       </div>
+                                    </div>
+                                </div>
+
+                                <!--Air Buttons-->
+                                <div class="panel__body-content">
+                                    <h4 id="button-air" class="panel__body-text">
+                                        Air Buttons
+                                    </h4>
+                                    <p>Use <code>button-air</code> class for hover air styles</p>
+                                    <div class="demo-preview">
+                                        <div class="demo-button-group">
+                                            <button type="button" class="button button-primary button-round button-shadow-primary button-air">Primary</button>
+                                            <button type="button" class="button button-secondary button-shadow-secondary button-air">Secondary</button>
+                                            <button type="button" class="button button-info button-round button-shadow-info button-air">Info</button>
+                                            <button type="button" class="button button-success button-round button-shadow-success button-air">Success</button>
+                                            <button type="button" class="button button-warning button-round button-shadow-warning button-air">Warning</button>
+                                            <button type="button" class="button button-danger button-round button-shadow-danger button-air">Danger</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Pill Buttons-->
+                                <div class="panel__body-content">
+                                    <h4 id="button-pill" class="panel__body-text">
+                                        Pill Buttons
+                                    </h4>
+                                    <p>Use <code>button-round</code> class for pill styles</p>
+                                    <div class="demo-preview">
+                                        <div class="demo-button-group">
+                                            <button type="button" class="button button-primary button-border button-round">Primary</button>
+                                            <button type="button" class="button button-secondary button-border button-round">Secondary</button>
+                                            <button type="button" class="button button-info button-border button-round">Info</button>
+                                            <button type="button" class="button button-success button-border button-round">Success</button>
+                                            <button type="button" class="button button-warning button-border button-round">Warning</button>
+                                            <button type="button" class="button button-danger button-border button-round">Danger</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Outline Buttons-->
+                                <div class="panel__body-content">
+                                    <h4 id="button-outline" class="panel__body-text">
+                                        Outline Buttons
+                                    </h4>
+                                    <p>Use <code>button-border</code> class for outline styles</p>
+                                    <div class="demo-preview">
+                                        <div class="demo-button-group">
+                                            <button type="button" class="button button-primary button-border">Primary</button>
+                                            <button type="button" class="button button-secondary button-border">Secondary</button>
+                                            <button type="button" class="button button-info button-border">Info</button>
+                                            <button type="button" class="button button-success button-border">Success</button>
+                                            <button type="button" class="button button-warning button-border">Warning</button>
+                                            <button type="button" class="button button-danger button-border">Danger</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Sharp/Flat Buttons-->
+                                <div class="panel__body-content">
+                                    <h4 id="button-flat" class="panel__body-text">
+                                        Sharp/Flat Buttons
+                                    </h4>
+                                    <p>Use <code>button-flat</code> class for outline styles</p>
+                                    <div class="demo-preview">
+                                        <div class="demo-button-group">
+                                            <button type="button" class="button button-primary button-border button-flat">Primary</button>
+                                            <button type="button" class="button button-secondary button-border button-flat">Secondary</button>
+                                            <button type="button" class="button button-info button-border button-flat">Info</button>
+                                            <button type="button" class="button button-success button-border button-flat">Success</button>
+                                            <button type="button" class="button button-warning button-border button-flat">Warning</button>
+                                            <button type="button" class="button button-danger button-border button-flat">Danger</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Disabled Buttons-->
+                                <div class="panel__body-content">
+                                    <h4 id="button-disabled" class="panel__body-text">
+                                        Disabled Buttons
+                                    </h4>
+                                    <p>Use <code>button-disabled</code> class for outline styles</p>
+                                    <div class="demo-preview">
+                                        <div class="demo-button-group">
+                                            <button type="button" class="button button-primary button-border button-disabled">Primary</button>
+                                            <button type="button" class="button button-secondary button-border button-disabled">Secondary</button>
+                                            <button type="button" class="button button-info button-border button-disabled">Info</button>
+                                            <button type="button" class="button button-success button-border button-disabled">Success</button>
+                                            <button type="button" class="button button-warning button-border button-disabled">Warning</button>
+                                            <button type="button" class="button button-danger button-border button-disabled">Danger</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--End-panel-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src='../dist/js/app.js'></script>
+</body>
+</html>
