@@ -2,6 +2,7 @@
 
 //Black-shades
 $black-dark: #000;
+$black-light-dark: #1e2022;
 $black-light: #4a4a4a;
 
 //White-shades
@@ -39,8 +40,8 @@ $purple-light: #9b59b6;
 //Base Values
 
 //Link
-$base-link-color: $blue-medium;
-$base-link-color-hover: $blue-medium-opacity-05;
+$base-link-color: $grey-dark;
+$base-link-color-hover: $black-dark;
 
 // Tooltips
 //Primary-color
@@ -53,3 +54,9 @@ $tooltip-success-bg-color: $green-light;
 $tooltip-info-bg-color: $blue-light;
 $tooltip-warning-bg-color: $orange-light;
 $tooltip-danger-bg-color: $red-dark;
+
+//Background-color
+$bg-white: $white-dark;
+$bg-dark: $black-light-dark;
+$bg-primary: $blue-light;
+$bg-secondary: $grey-dark;

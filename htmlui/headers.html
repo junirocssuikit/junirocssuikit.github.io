@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta class="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Headers | Juniro CSS KIT</title>
+    <link rel='stylesheet' href='../dist/css/website-style.min.css'/>
+    <link rel='stylesheet' href='../dist/css/fonts.min.css'/>
+    <link rel='stylesheet' href='../dist/css/app.min.css'/>
+</head>
+<body>
+<!-- Hero(extended) navbar -->
+<div class="navbar navbar--extended">
+    <nav class="nav__mobile"></nav>
+    <div class="container">
+        <div class="navbar__inner">
+            <a href="/" class="navbar__logo">Juniro CSS Kit</a>
+            <nav class="navbar__menu">
+                <ul>
+                    <li>
+                        <a class="active" href="../htmlui.html">HTML UI KITS</a>
+                    </li>
+                    <li>
+                        <a href="../components.html">Components</a>
+                    </li>
+                    <!--<li>-->
+                        <!--<a href="../page.html">Documentation</a>-->
+                    <!--</li>-->
+                </ul>
+            </nav>
+            <div class="navbar__menu-mob">
+                <a href="" id='toggle'>
+                    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                              class=""></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero unit -->
+<div class="page__header secondary">
+    <div class="hero__overlay hero__overlay--gradient"></div>
+    <div class="hero__mask"></div>
+    <div class="page__header__inner">
+        <div class="container">
+            <div class="page__header__content">
+                <div class="page__header__content__inner" id='navConverter'>
+                    <h1 class="page__header__title">HTML Components | Headers</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page content -->
+<div class="page">
+    <div class="page__inner">
+        <div class="page__menu">
+            <ul class="vMenu">
+                <li>
+                    <a href="#header-default" class="vMenu--active">Header Default</a>
+                    <ul class="secondary-vMenu">
+                        <li><a href="#header-full">Header Full Container</a></li>
+                        <li><a href="#header-no-navbar">Header No Navbar</a></li>
+                        <li><a href="#header-default-bg-color">Header Background Colors</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="page__main">
+            <div class="page__subheader">
+                <div class="page__subheader-content">
+                    <h3 id="flex-frid" class="page__subheader-title separator">Headers</h3>
+                    <ul class="page__subheader-breadcrumbs">
+                        <li class="page__subheader-nav__item-home">
+                            <a href="../htmlui.html" class="page__subheader-nav__link">
+                                <i class="page__subheader-nav__link-icon la la-home"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="page__content">
+                <div class="row">
+                    <div class="col-xsmall-12">
+                        <div class="panel">
+                            <div class="panel__head">
+                                <div class="panel__head-caption">
+                                    <div class="panel__head-title">
+                                        <h3 class="panel__head-text">
+                                            Default Headers
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel__body">
+                                <div class="panel__body-content">
+                                    <h4 id="header-default" class="panel__body-text">
+                                        Header Default
+                                    </h4>
+                                    <div class="demo-preview">
+                                        <div class="demo-list-group">
+                                            <header class="header">
+                                                <div class="header__section">
+                                                    <div class="container">
+                                                        <!-- Nav -->
+                                                        <nav class="header__nav">
+                                                            <!-- Logo -->
+                                                            <a class="header__brand" href="/" aria-label="Front">
+                                                                <span>Logo</span>
+                                                            </a>
+                                                            <!-- End Logo -->
+
+                                                            <!-- Navigation -->
+                                                            <div class="header__navbar-collapse py-0">
+                                                                <ul class="header__navbar-nav">
+                                                                    <!-- Home -->
+                                                                    <li class="header__navbar-item">
+                                                                        <a class="header__nav-link">
+                                                                            Home
+                                                                            <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Home -->
+
+                                                                    <!-- Pages -->
+                                                                    <li class="header__navbar-item">
+                                                                        <a class="header__nav-link">
+                                                                            Pages
+                                                                            <span class="la la-angle-down header__nav-link-icon"></span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Pages -->
+
+                                                                    <!-- Works -->
+                                                                    <li class="header__nav-item">
+                                                                        <a class="header__nav-link">
+                                                                            Work
+                                                                            <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Works -->
+
+                                                                    <!-- Blog -->
+                                                                    <li class="header__nav-item hs-sub-menu-opened">
+                                                                        <a class="header__nav-link">
+                                                                            Blog
+                                                                            <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Blog -->
+
+                                                                    <!-- Shop -->
+                                                                    <li class="header__nav-item">
+                                                                        <a class="header__nav-link">
+                                                                            Portfolio
+                                                                            <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Shop -->
+
+                                                                    <!-- Button -->
+                                                                    <li class="header__nav-item pl-10">
+                                                                        <a class="button button-air button-shadow-primary" href="#" target="_blank">
+                                                                            Login
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Button -->
+                                                                </ul>
+                                                            </div>
+                                                            <!-- End Navigation -->
+                                                        </nav>
+                                                        <!-- End Nav -->
+                                                    </div>
+                                                </div>
+                                            </header>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel__body-content">
+                                    <h4 id="header-full" class="panel__body-text">
+                                        Header Full Container
+                                    </h4>
+                                    <div class="demo-preview">
+                                        <div class="demo-list-group">
+                                            <header class="header">
+                                                <div class="header__section">
+                                                    <div class="container-fluid">
+                                                        <!-- Nav -->
+                                                        <nav class="header__nav">
+                                                            <!-- Logo -->
+                                                            <a class="header__brand" href="/" aria-label="Front">
+                                                                <span>Logo</span>
+                                                            </a>
+                                                            <!-- End Logo -->
+
+                                                            <!-- Navigation -->
+                                                            <div class="header__navbar-collapse py-0">
+                                                                <ul class="header__navbar-nav">
+                                                                    <!-- Home -->
+                                                                    <li class="header__navbar-item">
+                                                                        <a class="header__nav-link">
+                                                                            Home
+                                                                            <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Home -->
+
+                                                                    <!-- Pages -->
+                                                                    <li class="header__navbar-item">
+                                                                        <a class="header__nav-link">
+                                                                            Pages
+                                                                            <span class="la la-angle-down header__nav-link-icon"></span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Pages -->
+
+                                                                    <!-- Works -->
+                                                                    <li class="header__nav-item">
+                                                                        <a class="header__nav-link">
+                                                                            Work
+                                                                            <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Works -->
+
+                                                                    <!-- Blog -->
+                                                                    <li class="header__nav-item hs-sub-menu-opened">
+                                                                        <a class="header__nav-link">
+                                                                            Blog
+                                                                            <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Blog -->
+
+                                                                    <!-- Shop -->
+                                                                    <li class="header__nav-item">
+                                                                        <a class="header__nav-link">
+                                                                            Portfolio
+                                                                            <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Shop -->
+
+                                                                    <!-- Button -->
+                                                                    <li class="header__nav-item pl-10">
+                                                                        <a class="button button-air button-shadow-primary" href="#" target="_blank">
+                                                                            Login
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Button -->
+                                                                </ul>
+                                                            </div>
+                                                            <!-- End Navigation -->
+                                                        </nav>
+                                                        <!-- End Nav -->
+                                                    </div>
+                                                </div>
+                                            </header>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel__body-content">
+                                    <h4 id="header-no-navbar" class="panel__body-text">
+                                        Header No Navbar
+                                    </h4>
+                                    <div class="demo-preview" style="position: relative;">
+                                        <div class="demo-list-group">
+                                            <header class="header header__abs-top header__bg-transparent">
+                                                <div class="header__section">
+                                                    <div class="container">
+                                                        <!-- Nav -->
+                                                        <nav class="header__nav py-10">
+                                                            <!-- Logo -->
+                                                            <a class="header__brand" href="/" aria-label="Front">
+                                                                <span>Logo</span>
+                                                            </a>
+                                                            <!-- End Logo -->
+
+                                                            <!-- Button -->
+                                                            <div class="ml-auto">
+                                                                <a class="button button-air button-shadow-primary" href="#" target="_blank">
+                                                                    Login
+                                                                </a>
+                                                            </div>
+                                                            <!-- End Button -->
+                                                        </nav>
+                                                        <!-- End Nav -->
+                                                    </div>
+                                                </div>
+                                            </header>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel__body-content">
+                                    <h4 id="header-default-bg-color" class="panel__body-text">
+                                        Header Custom Background color
+                                    </h4>
+                                    <div class="demo-preview">
+                                        <div class="demo-list-group">
+                                            <header class="header header__custom-bg">
+                                                <div class="header__section bg-dark">
+                                                    <div class="container">
+                                                        <!-- Nav -->
+                                                        <nav class="header__nav">
+                                                            <!-- Logo -->
+                                                            <a class="header__brand" href="/" aria-label="Front">
+                                                                <span>Logo</span>
+                                                            </a>
+                                                            <!-- End Logo -->
+
+                                                            <!-- Navigation -->
+                                                            <div class="header__navbar-collapse py-0">
+                                                                <ul class="header__navbar-nav">
+                                                                    <!-- Home -->
+                                                                    <li class="header__navbar-item">
+                                                                        <a class="header__nav-link">
+                                                                            Home
+                                                                            <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Home -->
+
+                                                                    <!-- Pages -->
+                                                                    <li class="header__navbar-item">
+                                                                        <a class="header__nav-link">
+                                                                            Pages
+                                                                            <span class="la la-angle-down header__nav-link-icon"></span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Pages -->
+
+                                                                    <!-- Works -->
+                                                                    <li class="header__nav-item">
+                                                                        <a class="header__nav-link">
+                                                                            Work
+                                                                            <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Works -->
+
+                                                                    <!-- Blog -->
+                                                                    <li class="header__nav-item hs-sub-menu-opened">
+                                                                        <a class="header__nav-link">
+                                                                            Blog
+                                                                            <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Blog -->
+
+                                                                    <!-- Shop -->
+                                                                    <li class="header__nav-item">
+                                                                        <a class="header__nav-link">
+                                                                            Portfolio
+                                                                            <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Shop -->
+
+                                                                    <!-- Button -->
+                                                                    <li class="header__nav-item pl-10">
+                                                                        <a class="button button-air button-shadow-primary" href="#" target="_blank">
+                                                                            Login
+                                                                        </a>
+                                                                    </li>
+                                                                    <!-- End Button -->
+                                                                </ul>
+                                                            </div>
+                                                            <!-- End Navigation -->
+                                                        </nav>
+                                                        <!-- End Nav -->
+                                                    </div>
+                                                </div>
+                                            </header>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src='../dist/js/app.js'></script>
+</body>
+</html>

@@ -77,6 +77,18 @@
     }
   }
 
+  &.button-dark {
+    @include button-variant($white-dark, $black-dark, $black-dark);
+    &.button-border {
+      &:hover,
+      &:focus {
+        background: rgba($black-dark, 10%);
+        border-color: rgba($black-dark, 10%);
+        color: $white-dark;
+      }
+    }
+  }
+
   &.button-info {
     @include button-variant($white-dark, $blue-light, $blue-light);
     &.button-border {

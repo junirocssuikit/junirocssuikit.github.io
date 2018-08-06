@@ -1,11 +1,34 @@
 //Components
 @import 'components/base-components.scss';
 
+//Mixins
+@import "mixins/base-mixins";
+
 //Utilities
-@import 'utilities/base-utilities.scss';
+@import "utilities/base-utilities";
 
 //Layouts
 @import 'layouts/base-layouts.scss';
 
 //Pages
 @import 'pages/base-pages.scss';
+
+//Html-UI
+@import "htmlUI/base_htmlUi";
+
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}

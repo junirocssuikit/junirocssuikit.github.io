@@ -1,0 +1,50 @@
+@import "../mixins/base-mixins";
+
+.text-center {
+  text-align: center;
+}
+
+hr {
+  margin: 15px 0;
+  border: 0;
+  border-top: 1px solid #e7eaf3;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.text-right-md {
+  @include mq('tablet') {
+    text-align: right;
+  }
+}
+
+.fill-dark {
+  fill: #1e2022;
+}
+
+.text-white {
+  color: #fff;
+
+  h3, p {
+    color: #fff;
+  }
+
+  .icon {
+    color: #fff;
+  }
+
+  .list__link {
+    color: rgba(#fff, 0.7);
+
+    &:hover, &:focus {
+      color: #fff;
+    }
+  }
+}
+

@@ -1,0 +1,59 @@
+//Header Default
+
+.header {
+  position: relative;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 101;
+}
+
+.header__section {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0 1px 10px rgba(130, 130, 134, 0.1);
+}
+
+.header__nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  @include mq('tablet-wide') {
+    flex-wrap: nowrap;
+  }
+}
+
+.header__brand {
+  width: 150px;
+  display: inline-block;
+  margin-right: 15px;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.header__navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.header__navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0 0 0 auto;
+  list-style: none;
+}
+
+.header__nav-link {
+  display: block;
+  padding: 25px 20px;
+  color: #5a5f69;
+  cursor: pointer;
+}

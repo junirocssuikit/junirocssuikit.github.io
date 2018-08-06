@@ -1,0 +1,25 @@
+.bg-white {
+  background-color: $bg-white;
+}
+
+.bg-dark {
+  background-color: $bg-dark;
+}
+
+.bg-primary {
+  background-color: $bg-primary;
+}
+
+.bg-secondary {
+  background-color: $bg-secondary;
+}
+
+.header__custom-bg {
+  .header__nav-link {
+    color: rgba(255, 255, 255, 0.7);
+
+    &:hover, &:focus {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}

@@ -19,6 +19,9 @@ elixir(function (mix) {
         // Mixins
         .sass('./assets/sass/mixins/base-mixins.scss', './dist/css/mixins.min.css')
 
+        // Utilities
+        .sass('./assets/sass/utilities/base-utilities.scss', './dist/css/utilities.min.css')
+
         //Fonts
         .styles(
             [

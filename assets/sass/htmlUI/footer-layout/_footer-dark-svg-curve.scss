@@ -1,0 +1,9 @@
+.footer-curve {
+  .footer__content {
+    padding: 40px 0;
+
+    @include mq('tablet') {
+      padding: 80px 10px;
+    }
+  }
+}

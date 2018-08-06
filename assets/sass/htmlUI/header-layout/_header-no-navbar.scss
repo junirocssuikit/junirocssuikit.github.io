@@ -1,0 +1,13 @@
+.header__abs-top {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+}
+
+.header__bg-transparent {
+  background: transparent;
+
+  .header__section {
+    box-shadow: none;
+  }
+}

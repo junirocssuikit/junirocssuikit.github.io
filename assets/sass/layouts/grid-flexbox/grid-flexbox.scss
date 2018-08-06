@@ -1,14 +1,21 @@
 //Flexbox-responsive-grid
 
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
 .row {
   box-sizing: border-box;
   display: flex;
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
   width: auto;
+  margin: 0 -15px -20px;
 }
 
 .row.reverse {
@@ -44,6 +51,7 @@
   flex: 0 0 auto;
   padding-right: 15px;
   padding-left: 15px;
+  margin-bottom: 20px;
 }
 
 .col-xsmall {
@@ -254,6 +262,7 @@
     flex: 0 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    margin-bottom: 20px;
   }
 
   .col-small {
@@ -465,6 +474,7 @@
     flex: 0 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    margin-bottom: 20px;
   }
 
   .col-medium {
@@ -676,6 +686,7 @@
     flex: 0 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    margin-bottom: 20px;
   }
 
   .col-large {

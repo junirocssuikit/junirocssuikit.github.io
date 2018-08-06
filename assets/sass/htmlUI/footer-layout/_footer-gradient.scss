@@ -1,0 +1,36 @@
+.footer {
+  &.footer-gradient-blue {
+    background-image: linear-gradient(150deg, #2d1582 0%, #19a0ff 100%);
+    background-repeat: repeat-x;
+  }
+}
+
+.footer-gradient-blue {
+  .footer__content {
+    padding: 20px 0;
+    color: #fff;
+
+    @include mq('tablet') {
+      padding: 80px 20px 10px;
+    }
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+}
+
+.list-inline-item {
+  display: inline-block;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.row {
+  .bottom {
+    margin-top: 50px;
+  }
+}

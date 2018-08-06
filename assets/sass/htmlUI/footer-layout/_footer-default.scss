@@ -1,0 +1,42 @@
+.footer {
+  padding: 35px 10px;
+
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.footer__logo {
+  width: 80px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.copyright {
+  padding: 20px 0;
+}
+
+.list__link {
+  display: block;
+  color: #828286;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 5px 0;
+  font-style: normal;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.text-white-light {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
