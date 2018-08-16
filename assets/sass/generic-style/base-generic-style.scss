@@ -1,0 +1,45 @@
+//Custom-google-fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+/* Remove padding and margin */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  color: $base-text-color;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+

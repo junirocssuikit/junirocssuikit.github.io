@@ -47,7 +47,7 @@
 .button {
   display: inline-block;
   margin-bottom: 0;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -77,13 +77,25 @@
     }
   }
 
-  &.button-dark {
-    @include button-variant($white-dark, $black-dark, $black-dark);
+  &.button-white {
+    @include button-variant($black-light-dark, $white-dark, $white-dark);
     &.button-border {
       &:hover,
       &:focus {
-        background: rgba($black-dark, 10%);
-        border-color: rgba($black-dark, 10%);
+        background: rgba($white-dark, 10%);
+        border-color: rgba($white-dark, 10%);
+        color: $black-light-dark;
+      }
+    }
+  }
+
+  &.button-dark {
+    @include button-variant($white-dark, $black-light-dark, $black-light-dark);
+    &.button-border {
+      &:hover,
+      &:focus {
+        background: rgba($black-light-dark, 10%);
+        border-color: rgba($black-light-dark, 10%);
         color: $white-dark;
       }
     }
@@ -268,6 +280,10 @@
       box-shadow: 0 5px 10px 2px rgba(244, 81, 108, .19) !important;
     }
 
+    &-dark {
+      box-shadow: 0 5px 10px 2px rgba(30, 32, 34, 0.19) !important;
+    }
+
   }
 
   &.button-air {
@@ -276,38 +292,4 @@
       transform: translateY(-3px);
     }
   }
-}
-
-//Utilities
-
-.background-info {
-  background: $purple-light;
-  color: $white-dark;
-}
-
-.background-success {
-  background: $green-light;
-  color: $white-dark;
-}
-
-.background-warning {
-  background: $orange-light;
-  color: $white-dark;
-}
-
-.background-danger {
-  background: $red-light;
-  color: $white-dark;
-}
-
-.border-round {
-  border-radius: 30px;
-}
-
-.border-flat {
-  border-radius: 0;
-}
-
-.border-circle {
-  border-radius: 50%;
 }

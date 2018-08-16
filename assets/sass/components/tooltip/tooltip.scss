@@ -20,8 +20,8 @@
     height: 0;
     transform: translate(-50%, calc(-50% - 6px));
     transition: opacity 0.1s cubic-bezier(0.73, 0.01, 0, 1) 0s,
-      transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0s,
-      -webkit-transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0s;
+    transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0s,
+    -webkit-transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0s;
     z-index: 110000;
   }
   &:after {
@@ -32,8 +32,8 @@
     border-radius: 8px;
     color: $tooltip-base-text-color;
     transition: opacity 0.3s cubic-bezier(0.73, 0.01, 0, 1),
-      transform 0.3s cubic-bezier(0.73, 0.01, 0, 1),
-      -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1);
+    transform 0.3s cubic-bezier(0.73, 0.01, 0, 1),
+    -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1);
     pointer-events: none;
     z-index: 999;
     white-space: nowrap;
@@ -66,8 +66,8 @@
   &:hover {
     &:before {
       transition: opacity 0.1s cubic-bezier(0.73, 0.01, 0, 1) 0.1s,
-        transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0.1s,
-        -webkit-transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0.1s;
+      transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0.1s,
+      -webkit-transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0.1s;
       transform: translate(-50%, calc(-50% - 2px));
     }
     &:after {
@@ -209,52 +209,52 @@
 
 [data-tooltip][data-tooltip-conf*='delay']:before {
   -webkit-transition: opacity 0.2s cubic-bezier(0.73, 0.01, 0, 1) 0s,
-    -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
+  -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
   transition: opacity 0.2s cubic-bezier(0.73, 0.01, 0, 1) 0s,
-    -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
+  -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
   transition: opacity 0.2s cubic-bezier(0.73, 0.01, 0, 1) 0s,
-    transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
+  transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
   transition: opacity 0.2s cubic-bezier(0.73, 0.01, 0, 1) 0s,
-    transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s,
-    -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
+  transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s,
+  -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
 }
 
 [data-tooltip][data-tooltip-conf*='delay']:after {
   -webkit-transition: opacity 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s,
-    -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
+  -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
   transition: opacity 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s,
-    -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
+  -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
   transition: opacity 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s,
-    transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
+  transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
   transition: opacity 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s,
-    transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s,
-    -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
+  transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s,
+  -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0s;
 }
 
 [data-tooltip][data-tooltip-conf*='delay']:focus:before,
 [data-tooltip][data-tooltip-conf*='delay']:hover:before {
   -webkit-transition: opacity 0.2s cubic-bezier(0.73, 0.01, 0, 1) 0.5s,
-    -webkit-transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0.5s;
+  -webkit-transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0.5s;
   transition: opacity 0.2s cubic-bezier(0.73, 0.01, 0, 1) 0.5s,
-    -webkit-transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0.5s;
+  -webkit-transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0.5s;
   transition: opacity 0.2s cubic-bezier(0.73, 0.01, 0, 1) 0.5s,
-    transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0.5s;
+  transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0.5s;
   transition: opacity 0.2s cubic-bezier(0.73, 0.01, 0, 1) 0.5s,
-    transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0.5s,
-    -webkit-transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0.5s;
+  transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0.5s,
+  -webkit-transform 0.6s cubic-bezier(0.73, 0.01, 0, 1) 0.5s;
 }
 
 [data-tooltip][data-tooltip-conf*='delay']:focus:after,
 [data-tooltip][data-tooltip-conf*='delay']:hover:after {
   -webkit-transition: opacity 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0.4s,
-    -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0.4s;
+  -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0.4s;
   transition: opacity 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0.4s,
-    -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0.4s;
+  -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0.4s;
   transition: opacity 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0.4s,
-    transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0.4s;
+  transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0.4s;
   transition: opacity 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0.4s,
-    transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0.4s,
-    -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0.4s;
+  transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0.4s,
+  -webkit-transform 0.3s cubic-bezier(0.73, 0.01, 0, 1) 0.4s;
 }
 
 [data-tooltip][data-tooltip-conf*='shadow']:after {

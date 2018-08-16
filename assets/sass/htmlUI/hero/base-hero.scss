@@ -1,0 +1,64 @@
+.hero {
+  position: relative;
+
+  @include mq('tablet') {
+    height: 90vh;
+  }
+
+  &.hero-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      flex: 1;
+    }
+  }
+}
+
+p {
+  &.lead {
+    margin-bottom: 15px;
+
+    @include mq('tablet') {
+      margin-bottom: 20px;
+    }
+
+    @include mq('desktop-wide') {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.hero-content-image-right {
+  position: relative;
+  padding: 50px 0;
+
+  .hero-img {
+    @include mq('tablet') {
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      .hero-img__content {
+        width: 600px;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+.hero-button-grid {
+  .button {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}
+
+@import "hero-1";
+@import "hero-2";
+@import "hero-3";
+@import "hero-4";
+

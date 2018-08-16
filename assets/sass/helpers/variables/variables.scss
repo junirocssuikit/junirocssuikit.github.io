@@ -43,6 +43,9 @@ $purple-light: #9b59b6;
 $base-link-color: $grey-dark;
 $base-link-color-hover: $black-dark;
 
+//Text
+$base-text-color: $black-light-dark;
+
 // Tooltips
 //Primary-color
 $tooltip-base-text-color: $white-dark;
@@ -60,3 +63,13 @@ $bg-white: $white-dark;
 $bg-dark: $black-light-dark;
 $bg-primary: $blue-light;
 $bg-secondary: $grey-dark;
+
+$base-background-primary: $bg-primary;
+$base-background-secondary: $bg-secondary;
+
+//Color
+$color-primary: $green-light;
+$color-secondary: $blue-medium;
+
+$base-color-primary: $color-primary;
+$base-color-secondary: $color-secondary;

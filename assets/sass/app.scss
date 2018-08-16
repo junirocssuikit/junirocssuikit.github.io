@@ -1,8 +1,11 @@
-//Components
-@import 'components/base-components.scss';
+//Helpers
+@import "helpers/base-helpers";
 
 //Mixins
 @import "mixins/base-mixins";
+
+//Components
+@import 'components/base-components.scss';
 
 //Utilities
 @import "utilities/base-utilities";
@@ -16,19 +19,5 @@
 //Html-UI
 @import "htmlUI/base_htmlUi";
 
-
-img {
-  vertical-align: middle;
-  border-style: none;
-}
-
-figure {
-  margin: 0;
-}
-
-.container {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-  position: relative;
-}
+//Generic-Styles
+@import "generic-style/base-generic-style";

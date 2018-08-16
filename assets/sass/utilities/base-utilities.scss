@@ -1,14 +1,78 @@
 @import "../mixins/base-mixins";
 
+.block {
+  display: block;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+//backgrounds
+.background-info {
+  background: $purple-light;
+  color: $white-dark;
+}
+
+.background-success {
+  background: $green-light;
+  color: $white-dark;
+}
+
+.background-warning {
+  background: $orange-light;
+  color: $white-dark;
+}
+
+.background-danger {
+  background: $red-light;
+  color: $white-dark;
+}
+
+.border-round {
+  border-radius: 30px;
+}
+
+.border-flat {
+  border-radius: 0;
+}
+
+.border-circle {
+  border-radius: 50%;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 150px;
+}
+
+//colors
+.text-primary {
+  color: $base-color-primary;
+}
+
+.text-warning {
+  color: $orange-light;
+}
+
+.text-secondary {
+  color: $base-color-secondary;
+}
+
 .text-center {
   text-align: center;
 }
 
-hr {
-  margin: 15px 0;
-  border: 0;
-  border-top: 1px solid #e7eaf3;
+//Position
+.po-absolute {
+  position: absolute;
 }
+
+.po-relative {
+  position: relative;
+}
+
 
 .w-100 {
   width: 100%;
@@ -28,6 +92,15 @@ svg:not(:root) {
   fill: #1e2022;
 }
 
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.text-small {
+  font-size: 12px;
+}
+
 .text-white {
   color: #fff;
 
@@ -39,6 +112,10 @@ svg:not(:root) {
     color: #fff;
   }
 
+  &--light {
+    color: rgba(#fff, 0.7);
+  }
+
   .list__link {
     color: rgba(#fff, 0.7);
 
@@ -47,4 +124,30 @@ svg:not(:root) {
     }
   }
 }
+
+.text-black {
+  color: $black-light-dark;
+
+  h3, p {
+    color: $black-light-dark;
+  }
+
+  .icon {
+    color: $black-light-dark;
+  }
+
+  &--light {
+    color: rgba($black-light-dark, 0.7);
+  }
+
+  .list__link {
+    color: rgba($black-light-dark, 0.7);
+
+    &:hover, &:focus {
+      color: $black-light-dark;
+    }
+  }
+}
+
+
 

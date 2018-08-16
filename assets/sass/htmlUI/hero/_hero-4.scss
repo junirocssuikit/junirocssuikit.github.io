@@ -1,0 +1,25 @@
+//Hero-content-center
+.hero {
+  &.hero-center--content {
+
+    &.hero-gradient {
+      background-image: linear-gradient(150deg, #000000 0%, #1f6190 100%);
+    }
+    text-align: center;
+
+    .hero-button-grid {
+      .button {
+        width: auto;
+        min-width: 200px;
+        font-size: 16px;
+        padding: 15px 30px;
+        font-weight: 500;
+      }
+    }
+
+    .hero__inner {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+  }
+}

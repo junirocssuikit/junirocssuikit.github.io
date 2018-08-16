@@ -13,6 +13,11 @@
   z-index: 1;
   background-color: #fff;
   box-shadow: 0 1px 10px rgba(130, 130, 134, 0.1);
+  padding: 20px 0;
+
+  @include mq('tablet') {
+    padding: 0;
+  }
 }
 
 .header__nav {
@@ -43,11 +48,19 @@
 }
 
 .header__navbar-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0;
-  margin: 0 0 0 auto;
+  display: none;
+
+  @include mq('tablet') {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 0 auto;
+    list-style: none;
+  }
+}
+
+.header__navbar-item {
   list-style: none;
 }
 

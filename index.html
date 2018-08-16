@@ -51,7 +51,7 @@
                 <div class="hero__content__inner" id='navConverter'>
                     <h1 class="hero__title">Juniro CSS Kit</h1>
                     <p class="hero__text">A lightweight, responsive and modern CSS framework with varieties of HTML UI kits</p>
-                    <!--<a href="#" class="button button__accent">Docs</a>-->
+                    <!--<a href="#" class="web-button button__accent">Docs</a>-->
                     <!--<a href="#" class="button hero__button">Download</a>-->
                 </div>
             </div>
@@ -200,7 +200,7 @@
                 <a href="https://twitter.com/nirajanb89" target="_blank" class="footer__link">Nirajan Basnet</a>
             </div>
             <div>
-               <p>All copyrights reserved © <span id="currentYear">2018 This year</span></p>
+               <p>All copyrights reserved © <span id="currentYear">This year</span></p>
             </div>
             <div class="footer__data">
                 <div class="footer__data__item">
@@ -225,16 +225,20 @@
         </div>
     </div>
 </div>
+<script src="./dist/js/vendor.min.js"></script>
+<script src="./dist/js/app.min.js"></script>
 <script>
+
     //CurrentDate
     function CurrentYear() {
         var thisYear = new Date().getFullYear()
         $("#currentYear").text(thisYear);
     }
 
+
+
     CurrentYear();
 </script>
-<script src='./dist/js/app.js'></script>
 </body>
 
 </html>

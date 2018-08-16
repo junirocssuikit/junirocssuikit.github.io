@@ -41,11 +41,14 @@ elixir(function (mix) {
         );
 
     mix.scripts('./assets/js/script.js', './dist/js/app.min.js');
-    // mix.scripts(
-    //   [
-    //     './assets/js/vendor-js/jquery-3.3.1.min.js',
-    //     './assets/js/vendor-js/modernizr-3.5.0.min.js'
-    //   ],
-    //   './dist/js/vendor.min.js'
-    // );
+    mix.scripts(
+        [
+            './assets/js/vendor-js/jquery-3.2.1-js/jquery-3.2.1.min.js',
+            './assets/js/vendor-js/modernizr/modernizr-3.5.0.min.js',
+            './assets/js/vendor-js//modaal-js/modaal.min.js',
+            './assets/js/vendor-js/slick/slick.min.js',
+            './assets/js/vendor-js/dropdown/dropdown.js'
+        ],
+        './dist/js/vendor.min.js'
+    );
 });

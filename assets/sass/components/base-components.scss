@@ -1,5 +1,8 @@
 //Helpers
-@import '../helpers/base-helpers.scss';
+@import '../helpers/base-helpers';
+
+//Typography
+@import 'typography/typography';
 
 //Alerts
 @import 'alerts/alerts';
@@ -10,5 +13,7 @@
 //Tooltip
 @import 'tooltip/tooltip';
 
-////Typography
-//@import 'typography/typography';
+//Dropdowns
+@import 'dropdowns/simple-dropdown';
+@import 'dropdowns/simple-hover-dropdown';
+@import 'dropdowns/select-dropdown';

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta class="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Dropdowns | Juniro CSS KIT</title>
+    <link rel='stylesheet' href='../dist/css/website-style.min.css'/>
+    <link rel='stylesheet' href='../dist/css/components.min.css'/>
+    <link rel='stylesheet' href='../dist/css/layouts.min.css'/>
+    <link rel='stylesheet' href='../dist/css/fonts.min.css'/>
+    <link rel='stylesheet' href='../dist/css/app.min.css'/>
+</head>
+<body>
+<!-- Hero(extended) navbar -->
+<div class="navbar navbar--extended">
+    <nav class="nav__mobile"></nav>
+    <div class="container">
+        <div class="navbar__inner">
+            <a href="/" class="navbar__logo">Juniro CSS Kit</a>
+            <nav class="navbar__menu">
+                <ul>
+                    <li>
+                        <a href="../htmlui.html">HTML UI KITS</a>
+                    </li>
+                    <li>
+                        <a class="active" href="../components.html">Components</a>
+                    </li>
+                    <!--<li>-->
+                    <!--<a href="../page.html">Documentation</a>-->
+                    <!--</li>-->
+                </ul>
+            </nav>
+            <div class="navbar__menu-mob">
+                <a href="" id='toggle'>
+                    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                              class=""></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero unit -->
+<div class="page__header secondary">
+    <div class="hero__overlay hero__overlay--gradient"></div>
+    <div class="hero__mask"></div>
+    <div class="page__header__inner">
+        <div class="container">
+            <div class="page__header__content">
+                <div class="page__header__content__inner" id='navConverter'>
+                    <h1 class="page__header__title">Components | Dropdowns</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page content -->
+<div class="page">
+    <div class="page__inner">
+        <div class="page__menu">
+            <ul class="vMenu">
+                <li>
+                    <a href="#default-buttons" class="vMenu--active">Default Dropdowns</a>
+                    <ul class="secondary-vMenu">
+                        <li><a href="#dropdown-default">Default Dropdown</a></li>
+                        <li><a href="#dropdown-hover">Hover Dropdown</a></li>
+                        <li><a href="#dropdown-select">Select Dropdown</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="page__main">
+            <div class="page__subheader">
+                <div class="page__subheader-content">
+                    <h3 id="flex-frid" class="page__subheader-title separator">Dropdowns</h3>
+                    <ul class="page__subheader-breadcrumbs">
+                        <li class="page__subheader-nav__item-home">
+                            <a href="../components.html" class="page__subheader-nav__link">
+                                <i class="page__subheader-nav__link-icon la la-home"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page__content">
+                <div class="row">
+                    <div class="col-xsmall-12">
+                        <!--Begin-panel-->
+                        <div class="panel">
+                            <div class="panel__head">
+                                <div class="panel__head-caption">
+                                    <div class="panel__head-title">
+                                        <h3 class="panel__head-text">
+                                            Default Dropdowns
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel__body">
+                                <!--Simple-Dropdown-->
+                                <div class="panel__body-content">
+                                    <h4 id="dropdown-default" class="panel__body-text">
+                                        Simple Dropdown
+                                    </h4>
+                                    <div class="demo-preview">
+                                        <div class="demo-dropdown-group">
+                                            <div class="dropdown">
+                                                <button class="button button-primary button-shadow-primary" type="button" data-toggle="dropdown">
+                                                    Simple Dropdown
+                                                    <!--<span class="caret"></span>-->
+                                                </button>
+                                                <ul id="dropdown-menu" class="closed">
+                                                    <li><a>First item</a></li>
+                                                    <li><a href="#">Second item</a></li>
+                                                    <li><a href="#">Third item</a></li>
+                                                    <li><a href="#">Fourth item</a></li>
+                                                    <li><a href="#">Fifth item</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Hover-Dropdown-->
+                                <div class="panel__body-content">
+                                    <h4 id="dropdown-hover" class="panel__body-text">
+                                        Hover Dropdown
+                                    </h4>
+                                    <div class="demo-preview">
+                                        <div class="demo-dropdown-group">
+                                            <div class="dropdown-hover">
+                                                <button class="button button-danger button-shadow-danger">
+                                                    Hover Dropdown
+                                                    <!--<span class="caret"></span>-->
+                                                </button>
+                                                <ul class="dropdown-hover-content">
+                                                    <li><a>First item</a></li>
+                                                    <li><a href="#">Second item</a></li>
+                                                    <li><a href="#">Third item</a></li>
+                                                    <li><a href="#">Fourth item</a></li>
+                                                    <li><a href="#">Fifth item</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Select-Dropdown-->
+                                <div class="panel__body-content">
+                                    <header class="header">
+                                        <div class="header__section">
+                                            <div class="container">
+                                                <!-- Nav -->
+                                                <nav class="header__nav">
+                                                    <!-- Logo -->
+                                                    <a class="header__brand" href="/" aria-label="Front">
+                                                        <span>Logo</span>
+                                                    </a>
+                                                    <!-- End Logo -->
+
+                                                    <!-- Navigation -->
+                                                    <div class="header__navbar-collapse py-0">
+                                                        <ul class="header__navbar-nav">
+                                                            <!-- Home -->
+                                                            <li class="header__navbar-item">
+                                                                <a class="header__nav-link">
+                                                                    Home
+                                                                    <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                </a>
+                                                            </li>
+                                                            <!-- End Home -->
+
+                                                            <!-- Pages -->
+                                                            <li class="header__navbar-item">
+                                                                <a class="header__nav-link">
+                                                                    Pages
+                                                                    <span class="la la-angle-down header__nav-link-icon"></span>
+                                                                </a>
+                                                            </li>
+                                                            <!-- End Pages -->
+
+                                                            <!-- Works -->
+                                                            <li class="header__nav-item">
+                                                                <a class="header__nav-link">
+                                                                    Work
+                                                                    <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                </a>
+                                                            </li>
+                                                            <!-- End Works -->
+
+                                                            <!-- Blog -->
+                                                            <li class="header__nav-item hs-sub-menu-opened">
+                                                                <a class="header__nav-link">
+                                                                    Blog
+                                                                    <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                </a>
+                                                            </li>
+                                                            <!-- End Blog -->
+
+                                                            <!-- Shop -->
+                                                            <li class="header__nav-item">
+                                                                <a class="header__nav-link">
+                                                                    Portfolio
+                                                                    <!--<span class="la la-angle-down  header__nav-link-icon"></span>-->
+                                                                </a>
+                                                            </li>
+                                                            <!-- End Shop -->
+
+                                                            <!-- Button -->
+                                                            <li class="header__nav-item pl-10">
+                                                                <a class="button button-air button-shadow-primary" href="#" target="_blank">
+                                                                    Login
+                                                                </a>
+                                                            </li>
+                                                            <!-- End Button -->
+                                                        </ul>
+                                                    </div>
+                                                    <!-- End Navigation -->
+                                                </nav>
+                                                <!-- End Nav -->
+                                            </div>
+                                        </div>
+                                    </header>
+
+                                    <h4 id="dropdown-select" class="panel__body-text">
+                                        Select Dropdown
+                                    </h4>
+                                    <div class="demo-preview">
+                                        <div class="demo-dropdown-group">
+                                            <div class="select-dropdown js-select-dropdown">
+                                                <input type="hidden" name="country" id="country" class="js-select-dropdown__input">
+                                                <span class="button button-info button-shadow-info js-select-dropdown__current">Select Country</span>
+                                                <ul class="select-dropdown__list">
+                                                    <li class="select-dropdown__item" data-select-dropdown-value="nepal">Nepal</li>
+                                                    <li class="select-dropdown__item" data-select-dropdown-value="australia">Australia</li>
+                                                    <li class="select-dropdown__item" data-select-dropdown-value="united states">United States</li>
+                                                    <li class="select-dropdown__item" data-select-dropdown-value="england">England</li>
+                                                    <li class="select-dropdown__item" data-select-dropdown-value="brazil">Brazil</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End-panel-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../dist/js/vendor.min.js"></script>
+</body>
+</html>
